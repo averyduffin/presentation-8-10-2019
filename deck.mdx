@@ -1,7 +1,11 @@
 import { Appear, Head } from 'mdx-deck'
 import { FullScreenCode, Invert, Split } from 'mdx-deck/layouts'
+import { SocialIcon } from 'react-social-icons';
 
-export { default as theme } from './theme'
+
+import { themes } from 'mdx-deck'
+
+export const theme = themes.future
 
 <Head>
   <title>Presentation Title</title>
@@ -24,8 +28,16 @@ export { default as theme } from './theme'
   <meta property="article:section" content="Article Section (React? Design?)" />
 </Head>
 
-# Hello
+# A Glance at GatsbyJS
+## by Avery Duffin
 
+<a href="https://www.developerswholunch.com/talks">https://www.developerswholunch.com/talks</a>
+
+<span style={{padding: 20 }}><SocialIcon url="http://twitter.com/DuffinAvery" /></span>
+<span style={{padding: 20 }}><SocialIcon url="https://www.linkedin.com/in/avery-duffin-69317228/" /></span>
+<span style={{padding: 20 }}><SocialIcon url="https://open.spotify.com/show/6AZJs6Bj1Ds2hWkPSHpObA?si=1d1TQGRKROSaY4Eg77z4Ww" /></span>
+<span style={{padding: 20 }}><SocialIcon url="https://www.developerswholunch.com/" /></span>
+<span style={{padding: 20 }}><SocialIcon url="https://github.com/averyduffin" /></span>
 ---
 
 ## Edit this file

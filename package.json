@@ -14,5 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^1.6.7"
+  },
+  "dependencies": {
+    "react-social-icons": "^4.1.0"
   }
 }
