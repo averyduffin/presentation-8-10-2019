@@ -4,6 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 import { Image } from 'mdx-deck'
 import { Notes } from 'mdx-deck'
 import { themes } from 'mdx-deck'
+import { LiveCode, LiveEditor } from 'mdx-deck-live-code';
 
 export const theme = themes.future
 
@@ -47,26 +48,75 @@ export const theme = themes.future
 
 ?
 
-<Notes>
+---
 
+![alt text](chart.png)
+
+<Notes>
+Gatsby combines React-based, GraphQL and webpack
+static site generator
+More like modern frameworks thatn a static site generator of old
 </Notes>
 
 ---
-
-## HERE
-
-<img src="chart.svg"size={300}/>
-
-
----
-Gatsby is:
+Benefits
 <ul>
 <Appear>
-    <li>A static site generator</li>
-    <li>Actually a bit more like a modern front-end framework than a static site generator of old</li>
-    <li>Based on react, web pack, and graphql</li>
-    <li>Preconfigured to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server-side rendering, intelligent image loading, asset optimization, and data prefetching</li>
+    <li>preconfigured</li>
+    <li>incredibly fast page loads</li>
+    <li>service workers</li>
+    <li>code splitting</li>
+    <li>server-side rendering</li>
+    <li>intelligent image loading</li>
+    <li>asset optimization</li>
+    <li>data prefetching</li>
+    <li>JAMstack</li>
 </Appear>
 </ul>
 
 ---
+
+<img src="https://i.imgflip.com/2jjfsl.jpg" />
+
+---
+
+## Easy Quickstart
+
+```bash
+npm install -g gatsby-cli
+```
+##### Create a new site
+```bash
+gatsby new gatsby-site
+```
+##### Change to the site folder
+```bash
+cd gatsby-site
+```
+##### Start dev server
+```bash
+gatsby develop
+```
+
+<Notes>
+Easy CLI just like most programming languages
+</Notes>
+
+---
+
+## Site page
+
+<img src="landingscreen.png" width={800} />
+
+---
+
+## Graph QL query tool
+
+<img src="graphqlscreen.png" width={500} />
+
+###### http://localhost:8000/___graphql
+
+---
+<FullScreenCode>
+<iframe src="https://codesandbox.io/embed/github/gatsbyjs/gatsby-starter-default/tree/master/?fontsize=14" title="gatsby-starter-default" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style={{width:'100%', height:screen.height- 250, border:0, borderRadius: 4, overflow:'hidden'}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</ FullScreenCode>
