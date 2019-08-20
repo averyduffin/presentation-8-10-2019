@@ -117,6 +117,69 @@ Easy CLI just like most programming languages
 ###### http://localhost:8000/___graphql
 
 ---
+
+## DEMO
+
+<img src="watchingcode.png" width="400px"/>
+
+
+---
 <FullScreenCode>
-<iframe src="https://codesandbox.io/embed/github/gatsbyjs/gatsby-starter-default/tree/master/?fontsize=14" title="gatsby-starter-default" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style={{width:'100%', height:screen.height- 250, border:0, borderRadius: 4, overflow:'hidden'}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/gatsby-at-a-glance-siblt?fontsize=14" title="gatsby-starter-default" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style={{width:'100%', height:screen.height- 250, border:0, borderRadius: 4, overflow:'hidden'}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </ FullScreenCode>
+
+---
+
+## DATA
+
+Do you have to use GraphQL for data?
+<Appear>
+    <div>No, if you don't you use the createPages api, inside gatsby-node.js file</div>
+    <div>Hooks into a point in the Gastby bootstrap sequence</div>
+</Appear>
+---
+
+When should you use unstructured data vs graphql?
+<Appear>
+    <div>If you’re building a small site it can be more efficient to use unstructured data</div>
+</Appear>
+
+---
+
+##### install
+```bash
+npm install --save gatsby-source-filesystem
+```
+##### Add plugin gatsby-config.js
+```
+module.exports = {
+  siteMetadata: {
+    title: `blah`,
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    }
+  ],
+}
+```
+
+---
+
+<FullScreenCode>
+<iframe src="https://codesandbox.io/embed/gatsby-at-a-glance-siblt?fontsize=14" title="gatsby-starter-default" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style={{width:'100%', height:screen.height- 250, border:0, borderRadius: 4, overflow:'hidden'}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</ FullScreenCode>
+
+---
+
+# Netlify
+
+Deploy free on netlify
+
+---
+
+## QUESTIONS?
